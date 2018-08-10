@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EuiCard is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="euiCard euiCard--centerAligned testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <span
+    class="euiCard__top"
+  />
+  <span
+    class="euiCard__content"
+  >
+    <span
+      class="euiTitle euiTitle--small euiCard__title"
+    >
+      Card title
+    </span>
+    <div
+      class="euiText euiText--small euiCard__description"
+    >
+      <p>
+        Card description
+      </p>
+    </div>
+  </span>
+  <span
+    class="euiCard__footer"
+  />
+</div>
+`;

@@ -1,0 +1,6 @@
+$euiSwitchHeight: $euiSize * 1.25;
+$euiSwitchWidth: ($euiSize * 2.5) + $euiSizeXS;
+$euiSwitchThumbSize: $euiSwitchHeight;
+$euiSwitchIconHeight: $euiSize;
+
+@import 'switch';

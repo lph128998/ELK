@@ -1,0 +1,28 @@
+import { fieldFormats } from 'ui/registry/field_formats';
+import { createUrlFormat } from '../../common/field_formats/types/url';
+import { createBytesFormat } from '../../common/field_formats/types/bytes';
+import { createDateFormat } from '../../common/field_formats/types/date';
+import { createRelativeDateFormat } from '../../common/field_formats/types/relative_date';
+import { createDurationFormat } from '../../common/field_formats/types/duration';
+import { createIpFormat } from '../../common/field_formats/types/ip';
+import { createNumberFormat } from '../../common/field_formats/types/number';
+import { createPercentFormat } from '../../common/field_formats/types/percent';
+import { createStringFormat } from '../../common/field_formats/types/string';
+import { createSourceFormat } from '../../common/field_formats/types/source';
+import { createColorFormat } from '../../common/field_formats/types/color';
+import { createTruncateFormat } from '../../common/field_formats/types/truncate';
+import { createBoolFormat } from '../../common/field_formats/types/boolean';
+
+fieldFormats.register(createUrlFormat);
+fieldFormats.register(createBytesFormat);
+fieldFormats.register(createDateFormat);
+fieldFormats.register(createRelativeDateFormat);
+fieldFormats.register(createDurationFormat);
+fieldFormats.register(createIpFormat);
+fieldFormats.register(createNumberFormat);
+fieldFormats.register(createPercentFormat);
+fieldFormats.register(createStringFormat);
+fieldFormats.register(createSourceFormat);
+fieldFormats.register(createColorFormat);
+fieldFormats.register(createTruncateFormat);
+fieldFormats.register(createBoolFormat);

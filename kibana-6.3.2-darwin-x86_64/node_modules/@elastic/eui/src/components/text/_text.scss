@@ -1,0 +1,158 @@
+.euiText {
+  @include euiText;
+  @include euiFontSize;
+
+  a {
+    color: $euiLinkColor;
+
+    &:hover {
+      color: darken($euiLinkColor, 10%);
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  p,
+  ul,
+  ol,
+  blockquote,
+  img {
+    margin-bottom: $euiSizeL;
+  }
+
+  ul {
+    list-style: disc;
+    margin-left: $euiSizeL;
+  }
+
+  ol {
+    list-style: decimal;
+    margin-left: $euiSizeL;
+  }
+
+  blockquote {
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: $euiSizeL;
+    max-width: 36rem;
+    font-family: Georgia,Times,Times New Roman,serif;
+    font-size: 112.5%;
+    line-height: 1.5;
+    font-style: italic;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before, &:after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 50%;
+      transform: translateX(-50%);
+      background: $euiColorDarkShade;
+    }
+
+    &:before {
+      top: 0;
+    }
+
+    &:after {
+      bottom: 0;
+    }
+  }
+
+  * + h1,
+  * + h2,
+  * + h3,
+  * + h4,
+  * + h5,
+  * + h6 {
+    margin-top: $euiSizeXL
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    @include euiTitle;
+    margin-bottom: $euiSizeS;
+  }
+
+  h1 {
+    font-size: 200%;
+  }
+
+  h2 {
+    font-size: 150%;
+    line-height: $euiSizeXL;
+  }
+
+  h3 {
+    font-size: 112.5%;
+  }
+
+  h3, h4, h5 {
+    font-weight: $euiFontWeightMedium;
+  }
+
+  &.euiText--small {
+    @include euiFontSizeS;
+
+    * + h1,
+    * + h2,
+    * + h3,
+    * + h4,
+    * + h5,
+    * + h6 {
+      margin-top: $euiSizeL;
+    }
+
+    p,
+    ul,
+    ol,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    img {
+      margin-bottom: $euiFontSizeS;
+    }
+  }
+
+  &.euiText--extraSmall {
+    @include euiFontSizeXS;
+
+    * + h1,
+    * + h2,
+    * + h3,
+    * + h4,
+    * + h5,
+    * + h6 {
+      margin-top: $euiSizeM;
+    }
+
+    p,
+    ul,
+    ol,
+    blockquote,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    img {
+      margin-bottom: $euiFontSizeS;
+    }
+  }
+
+  > :last-child {
+    margin-bottom: 0 !important;
+  }
+}

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EuiHeaderBreadcrumbs is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="euiHeaderBreadcrumbs testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <span>
+    I thought I would sail about a little and see the watery part of the world.
+  </span>
+</div>
+`;

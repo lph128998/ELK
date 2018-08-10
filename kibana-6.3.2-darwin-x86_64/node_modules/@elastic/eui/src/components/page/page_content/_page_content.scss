@@ -1,0 +1,21 @@
+.euiPageContent {
+  width: 100%;
+
+  &.euiPageContent--verticalCenter {
+    align-self: center;
+  }
+
+  &.euiPageContent--horizontalCenter {
+    width: auto;
+    margin: auto;
+    flex-grow: 0; // Offsets the properties of .euiPanel within flexboxes
+  }
+}
+
+
+@include screenXSmall {
+  .euiPageContent {
+    border-radius: 0;
+    border: none;
+  }
+}
